@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature's Platter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --accent-color: #179800;
+        --secondary-color: #efebe3;
+      }
+      .font-sora {
+        font-family: "Sora", serif;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="font-sora">
+    <header class="bg-gradient-to-b from-[#ffffff] to-[#efebe3]">
+      <nav
+        class="max-w-[1320px] mx-auto flex justify-between items-center px-4 md:px-0 py-8"
+      >
+        <!-- logo -->
+        <div class="">
+          <img
+            src="./c2-assets/logo-header.png"
+            class="hidden md:block"
+            alt=""
+          />
+          <img src="./c2-assets/logo.png" class="md:hidden" alt="" />
+        </div>
+        <!-- nav-links -->
+        <div class="ml-40 hidden md:block">
+          <ul class="flex gap-8">
+            <li><a href="">Product</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+        <!-- nav-icon+button -->
+        <div class="space-x-4 hidden md:block">
+          <i class="fa-solid text-2xl fa-magnifying-glass"></i>
+          <i class="fa-solid text-2xl fa-cart-shopping"></i>
+          <button
+            class="px-[20px] py-[10px] border border-[#179800] rounded-lg"
+          >
+            Login
+          </button>
+          <button
+            class="px-[20px] py-[10px] bg-[#179800] rounded-lg text-white"
+          >
+            Register
+          </button>
+        </div>
+        <i class="fa-solid fa-bars md:hidden text-3xl"></i>
+      </nav>
+      <!-- banner section  -->
+      <section
+        class="max-w-[1320px] mx-auto flex flex-col justify-center items-center text-center md:mt-[90px] border"
+      >
+        <!-- banner text  -->
+        <div class="mb-5">
+          <h2 class="text-[32px] md:text-[56px] font-semibold">
+            Freshness
+            <span class="text-[var(--accent-color)]">You Can <br />Count</span>
+            On, Prices You’ll Love!
+          </h2>
+          <p>
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry <br />staples, we’ve got you covered every day!
+          </p>
+        </div>
+        <!-- banner image -->
+        <img src="./c2-assets/hero-vegetables.png" alt="" />
+      </section>
+    </header>
+  </body>
+</html>
