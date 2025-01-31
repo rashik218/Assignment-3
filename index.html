@@ -32,6 +32,20 @@
         font-family: "Sora", serif;
         font-style: normal;
       }
+      @keyframes zoomIn {
+        from {
+          transform: scale(0.8);
+          opacity: 0.7;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .animate-zoomIn {
+        animation: zoomIn 0.7s ease-in-out infinite alternate-reverse;
+      }
     </style>
   </head>
   <body class="font-sora">
@@ -75,7 +89,7 @@
       </nav>
       <!-- banner section  -->
       <section
-        class="max-w-[1320px] mx-auto flex flex-col justify-center items-center text-center md:mt-[90px]"
+        class="max-w-[1320px] mx-auto flex flex-col justify-center items-center text-center md:mt-[90px] relative"
       >
         <!-- banner text  -->
         <div class="mb-5">
@@ -90,10 +104,78 @@
           </p>
         </div>
         <!-- banner image -->
-        <img src="./c2-assets/hero-vegetables.png" alt="" />
+        <div class="">
+          <img src="./c2-assets/hero-vegetables.png" alt="" />
+          <img
+            src="./c2-assets/flash-sale.png"
+            alt=""
+            class="h-56 hidden md:block rounded-full bg-green-500 absolute top-5 -left-3 animate-zoomIn"
+          />
+        </div>
       </section>
     </header>
     <main class="mt-12 md:mt-[140px]">
+      <section class="bg-[var(--secondary-color)] py-16 px-4 md:px-0">
+        <div class="max-w-[1320px] mx-auto text-center space-y-8">
+          <!-- Flash Sale Title -->
+          <h2 class="text-4xl font-bold text-[var(--accent-color)]">
+            🔥 Flash Sale: Limited Time Offer!
+          </h2>
+          <p class="text-lg text-gray-600">Hurry up! Amazing deals end soon!</p>
+
+          <!-- Products Section -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <!-- Product 1-->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <img
+                src="./c2-assets/organic-apple.jpg"
+                alt="Product 1"
+                class="w-full rounded-md mb-4"
+              />
+              <h3 class="text-lg font-semibold">Organic Apples</h3>
+              <p class="text-gray-500 line-through">$10.00</p>
+              <p class="text-xl font-bold text-[var(--accent-color)]">$7.00</p>
+              <button
+                class="mt-4 bg-[var(--accent-color)] text-white py-2 px-4 rounded-lg hover:bg-[#244129] transition"
+              >
+                Buy Now
+              </button>
+            </div>
+            <!-- Product 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <img
+                src="./c2-assets/banana.jpg"
+                alt="Product 2"
+                class="w-full rounded-md mb-4"
+              />
+              <h3 class="text-lg font-semibold">Fresh Bananas</h3>
+              <p class="text-gray-500 line-through">$8.00</p>
+              <p class="text-xl font-bold text-[var(--accent-color)]">$5.50</p>
+              <button
+                class="mt-4 bg-[var(--accent-color)] text-white py-2 px-4 rounded-lg hover:bg-[#244129] transition"
+              >
+                Buy Now
+              </button>
+            </div>
+            <!-- Product 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <img
+                src="./c2-assets/orange.jpg"
+                alt="Product 3"
+                class="w-full rounded-md mb-4"
+              />
+              <h3 class="text-lg font-semibold">Juicy Oranges</h3>
+              <p class="text-gray-500 line-through">$12.00</p>
+              <p class="text-xl font-bold text-[var(--accent-color)]">$9.00</p>
+              <button
+                class="mt-4 bg-[var(--accent-color)] text-white py-2 px-4 rounded-lg hover:bg-[#244129] transition"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- services section -->
       <section class="space-y-12 px-4 max-w-[1320px] mx-auto">
         <h2 class="text-[var(--accent-color)] text-4xl font-semibold">
